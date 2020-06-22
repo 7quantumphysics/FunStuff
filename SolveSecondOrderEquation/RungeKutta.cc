@@ -10,11 +10,11 @@ using namespace std;
 
 void RK(vector<double>& f, double& f_initial,
 	vector<double>& df_dt, double& df_dt_initial,
-	double& duration, double& min, double& max,
+	int& nDataPoints, double& min, double& max,
        	const function <double (double, double)> SECOND_DERIVATIVE)
 {
   double t = min; // initialize independant variable 
-  double dt = (max-min)/duration; // Define the small interval
+  double dt = (max-min)/nDataPoints; // Define the small interval
   f.push_back(f_initial); // Initialize dependant variable
   df_dt.push_back(df_dt_initial); // Initialize first derivative of dependant variable
   
