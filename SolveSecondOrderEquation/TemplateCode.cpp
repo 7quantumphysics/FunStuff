@@ -6,14 +6,14 @@
 
 using namespace std;
 
-/* ----------------------------------------------_--------- */
+/* -------------------------------------------------------- */
 /* //    Define a Function's Second Order Derivative     // */
 /* //    in terms of the Independant Variable and the    // */
 /* //    Function itself                                 // */
 /* -------------------------------------------------------- */
 /* i.e.)                                                    */
 
-double dt2_dt2(double t, double y)
+double d2y_dt2(double t, double y)
 {
   double c = 0.2;
   double F = 0.5;
@@ -50,7 +50,7 @@ int main()
   /* -------------------------------------------------------------- */
   /* i.e.)                                                          */
 
-  function <double (double, double)> Second_Derivative = dt2_dt2;
+  function <double (double, double)> Second_Derivative = d2y_dt2;
 
   /* ------------------------------------------ */
   /* //     Call the RungeKutta Function     // */
