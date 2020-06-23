@@ -1,0 +1,15 @@
+Follow the 'TemplateCode.cpp' for an example of how to implement the 4 point RungeKutta
+algorithm into your own .cpp code.  A brief description of the variables and their data
+types can be found in the header file RungeKutta.h
+
+This RungeKutta is a copy of the 'SolveSecondOrderEquation' directory that allows for
+second order derivatives that rely on two independant functions that must be updated
+along every time step.  An example problem for this would be a 'simple' double pendulum
+problem or a two body orbit.
+
+(In General, one can edit these RK functions to include as many independant functions as
+need be for the problem at hand.)
+
+To compile your code, open the MakeFile with your favorite text editor and replace
+'TemplateCode' with the name of your own .cpp file, then type 'make' in the terminal.
+From here, you can execute using ./your_code_name.x
